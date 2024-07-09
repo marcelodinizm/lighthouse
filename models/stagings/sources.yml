@@ -3,38 +3,54 @@ version: 2
 sources:
   - name: 'banvic_raw'
     description: "Tabelas Raw do BanVic"
+    
     tables:
       - name: 'agencias'
         description: "Agências Banvic"
         columns:
-            - name: cod_agencia
-              description: "Código da Agência"
-              tests:
-                  - unique
-                  - not_null
-            - name: nome
-              description: "Nome da Agência"
-              tests:
-                - unique
-                - not_null
-            - name: endereco
-              description: "Endereço da Agência"
-              tests:
-                - unique
-                - not_null            
-            - name: cidade
-              description: "Cidade da Agência"
-              tests:
-                - not_null              
-            - name: uf
-              description: "Estado da Agência"
-              tests:
-                - not_null
-            - name: data_abertura
-              description: "Data de Abertura da Agência"
-              tests:
-                - not_null
-            - name: tipo_agencia
-              description: "Tipo de Agênica, se é Fisíca ou Digital"
-              tests:
-                - not_null
+          - name: cod_agencia
+            description: "Código da Agência"
+            tests:
+              - unique
+              - not_null
+          - name: nome
+            description: "Nome da Agência"
+            tests:
+              - unique
+              - not_null
+          - name: endereco
+            description: "Endereço da Agência"
+            tests:
+              - unique
+              - not_null            
+          - name: cidade
+            description: "Cidade da Agência"
+            tests:
+              - not_null              
+          - name: uf
+            description: "Estado da Agência"
+            tests:
+              - not_null
+          - name: data_abertura
+            description: "Data de Abertura da Agência"
+            tests:
+              - not_null
+          - name: tipo_agencia
+            description: "Tipo de Agênica, se é Fisíca ou Digital"
+
+      - name: 'colaborador_agencia'
+        columns:
+          - name: cod_colaborador
+          - name: cod_agencia
+
+      - name: 'colaboradores'
+        columns:
+          - name: cod_colaborador      
+
+      - name: 'clientes'
+
+      - name: 'contas'
+
+      - name: 'propostas_credito'
+      
+      - name: 'transacoes'
