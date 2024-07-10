@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: fct_contas
+    description: "Tabela fato das contas."
+    columns:
+      - name: tipo_conta
+      
+      - name: saldo_total
+      
+      - name: saldo_disponivel
+      
+      - name: cod_transacao
+      
+      - name: data_abertura
+      
+      - name: data_transacao
+      
+      - name: data_ultimo_lancamento
+      
+      - name: nome_transacao
+      
+      - name: valor_transacao
+      
+      - name: cod_agencia
+      
+      - name: tipo_agencia
+      
+      - name: data_abertura_agencia
+      
+      - name: uf_agencia
+      
+      - name: cidade_agencia
+      

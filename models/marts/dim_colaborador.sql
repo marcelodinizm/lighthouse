@@ -12,10 +12,9 @@ with
     , dim_colaborador as (
     SELECT
         colaboradores.cod_colaborador
-        , colaboradores.primeiro_nome
-        , colaboradores.ultimo_nome
-        , colaboradores.cpf
-        , colaboradores.data_nascimento
+        , concat(colaboradores.primeiro_nome, ' ', colaboradores.ultimo_nome) as nome_colaborador
+        , colaboradores.cpf as cpf_colaborador
+        , colaboradores.data_nascimento as data_nascimento_colaborador
         , colaborador_agencia.cod_agencia
     FROM colaboradores
     LEFT JOIN colaborador_agencia
