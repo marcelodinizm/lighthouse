@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_colaborador
+    description: "Tabela dimensão colaborador."
+    columns:
+      - name: cod_colaborador
+
+      - name: nome_colaborador
+
+      - name: cpf_colaborador
+
+      - name: data_nascimento_colaborador
+
+      - name: cod_agencia
