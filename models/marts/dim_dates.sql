@@ -50,15 +50,15 @@ with
             end as nome_mes
             , dia_da_semana
             , case
-                when dia_da_semana = 0 then 'Domingo'
-                when dia_da_semana = 1 then 'Segunda'
-                when dia_da_semana = 2 then 'Terça'
-                when dia_da_semana = 3 then 'Quarta'
-                when dia_da_semana = 4 then 'Quinta'
-                when dia_da_semana = 5 then 'Sexta'
-                when dia_da_semana = 6 then 'Sábado'
+                when dia_da_semana = '0' then 'Domingo'
+                when dia_da_semana = '1' then 'Segunda'
+                when dia_da_semana = '2' then 'Terça'
+                when dia_da_semana = '3' then 'Quarta'
+                when dia_da_semana = '4' then 'Quinta'
+                when dia_da_semana = '5' then 'Sexta'
+                when dia_da_semana = '6' then 'Sábado'
             end as nome_dia_da_semana
-            , dia_ultil
+            , dia_util
         from calendar
     )
 

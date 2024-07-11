@@ -6,10 +6,10 @@ with
             , cod_agencia
             , cod_colaborador	
             , tipo_conta	
-            , data_abertura	
+            , cast(data_abertura as date) as data_abertura	
             , saldo_total	
             , saldo_disponivel	
-            , data_ultimo_lancamento
+            , cast(data_ultimo_lancamento as date) as data_ultimo_lancamento
         from {{ source("banvic_raw", "contas")}}
     )
 

@@ -44,13 +44,12 @@ sources:
 
 models:  
   lighthouse:
-    dbt_mdiniz:
-      stagings:
-        +materialized: view
-      intermediates:
-        +materialized: table
-      marts:
-        +materialized: table
+    stagings:
+      +materialized: view
+    intermediates:
+      +materialized: table
+    marts:
+      +materialized: table
 
 
 

@@ -3,7 +3,7 @@ with
         select
             cod_transacao	
             , num_conta	
-            , data_transacao	
+            , cast(data_transacao as date) as data_transacao
             , nome_transacao
             , case
                 when nome_transacao LIKE 'Pix%' then 'PIX'
