@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_dates
+    description: "Tabela de dimensão de datas."
+    columns:
+      - name: id
+      
+      - name: data_id
+      
+      - name: data_completa
+      
+      - name: ano
+      
+      - name: semana_ano
+      
+      - name: dia_ano
+      
+      - name: semestre
+      
+      - name: mes
+
+      - name: nome_mes
+      
+      - name: dia_da_semana
+      
+      - name: nome_dia_da_semana
+      
+      - name: dia_util
+      
