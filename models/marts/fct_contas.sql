@@ -26,7 +26,8 @@ with
             , contas.data_abertura	
             , transacao.data_transacao
             , contas.data_ultimo_lancamento	
-            , transacao.nome_transacao	
+            , transacao.nome_transacao
+            , transacao.tipo_transacao
             , transacao.valor_transacao
             , contas.cod_agencia
             , agencias.tipo_agencia
