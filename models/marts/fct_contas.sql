@@ -13,7 +13,10 @@ with
         select *
         from {{ ref('stg__agencias') }}
     )
-
+    , clientes as (
+        select *
+        from {{ ref('stg__clientes') }}
+    )
     , fato_contas as (
         select
             contas.num_conta
@@ -25,7 +28,7 @@ with
             , transacao.cod_transacao
             , contas.data_abertura	
             , transacao.data_transacao
-            , contas.data_ultimo_lancamento	
+            , contas.data_ultimo_lancamento
             , transacao.nome_transacao
             , transacao.tipo_transacao
             , transacao.valor_transacao

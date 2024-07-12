@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: dim_dates
+  - name: dim2_dates
     description: "Tabela de dimensão de datas."
     columns:
       - name: id
@@ -15,6 +15,8 @@ models:
       - name: semana_ano
       
       - name: dia_ano
+
+      - name: inico_final
       
       - name: semestre
       
