@@ -32,39 +32,6 @@ with
             , ano
             , semano_ano
             , dia_ano
-            , case
-                when dia_ano = 1 then 'Começo do mês'
-                when dia_ano = 2 then 'Começo do mês'
-                when dia_ano = 3 then 'Começo do mês'
-                when dia_ano = 4 then 'Começo do mês'
-                when dia_ano = 5 then 'Começo do mês'
-                when dia_ano = 6 then 'Começo do mês'
-                when dia_ano = 7 then 'Começo do mês'
-                when dia_ano = 8 then 'Começo do mês'
-                when dia_ano = 9 then 'Começo do mês'
-                when dia_ano = 10 then 'Começo do mês'
-                when dia_ano = 11 then 'Começo do mês'
-                when dia_ano = 12 then 'Começo do mês'
-                when dia_ano = 13 then 'Começo do mês'
-                when dia_ano = 14 then 'Começo do mês'
-                when dia_ano = 15 then 'Começo do mês'
-                when dia_ano = 16 then 'Final do mês'
-                when dia_ano = 17 then 'Final do mês'
-                when dia_ano = 18 then 'Final do mês'
-                when dia_ano = 19 then 'Final do mês'
-                when dia_ano = 20 then 'Final do mês'
-                when dia_ano = 21 then 'Final do mês'
-                when dia_ano = 22 then 'Final do mês'
-                when dia_ano = 23 then 'Final do mês'
-                when dia_ano = 24 then 'Final do mês'
-                when dia_ano = 25 then 'Final do mês'
-                when dia_ano = 26 then 'Final do mês'
-                when dia_ano = 27 then 'Final do mês'
-                when dia_ano = 28 then 'Final do mês'
-                when dia_ano = 29 then 'Final do mês'
-                when dia_ano = 30 then 'Final do mês'
-                when dia_ano = 31 then 'Final do mês'
-            end as inico_final
             , semestre
             , mes
             , case

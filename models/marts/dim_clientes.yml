@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: "Tabela dimensão dos clientes."
+    columns:
+      - name: cod_cliente
+      - name: tipo_conta
+      - name: saldo_total
+      - name: saldo_disponivel
+      - name: data_abertura
+      - name: data_ultimo_lancamento
+      - name: ultima_data_transacao
+      - name: status_conta
+      - name: data_nascimento
+      - name: idade_cliente
+      
