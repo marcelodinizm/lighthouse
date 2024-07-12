@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: dim_dates
+  - name: dim2_dates
     description: "Tabela de dimensão de datas."
     columns:
       - name: id
