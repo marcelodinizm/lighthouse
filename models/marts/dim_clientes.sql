@@ -25,6 +25,7 @@ with
     , medida as (
         select
             contas.cod_cliente
+            , concat(clientes.primeiro_nome, ' ', clientes.ultimo_nome) as nome_cliente
             , contas.tipo_conta
             , contas.saldo_total
             , contas.saldo_disponivel
@@ -44,7 +45,7 @@ with
             end as status_conta
             , clientes.data_nascimento
             , DATE_DIFF(CURRENT_DATE(), clientes.data_nascimento, YEAR) as idade_cliente
-            
+            , agencias.tipo_agencia
         from contas
             left join transacao
                 on contas.num_conta = transacao.num_conta
@@ -57,11 +58,13 @@ with
     , idade_media as (
         select 
             cod_cliente
+            , medida.nome_cliente
             , medida.tipo_conta
             , medida.saldo_total
             , medida.saldo_disponivel
             , medida.perfil_de_atividade
             , medida.data_abertura
+            , tipo_agencia
             , medida.data_ultimo_lancamento
             , medida.ultima_data_transacao
             , medida.status_conta

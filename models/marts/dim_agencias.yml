@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_agencias
+    description: "Tabela dimensão das Agências."
+    columns:
+      - name: cod_agencia
+      - name: nome
+      - name: endereco
+      - name: cidade
+      - name: uf
+      - name: data_abertura
+      - name: tipo_agencia
+      
