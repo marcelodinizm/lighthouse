@@ -47,6 +47,7 @@ with
             , DATE_DIFF(CURRENT_DATE(), clientes.data_nascimento, YEAR) as idade_cliente
             , agencias.cod_agencia
             , agencias.tipo_agencia
+            , agencias.uf as uf_agencia
         from contas
             left join transacao
                 on contas.num_conta = transacao.num_conta
@@ -67,6 +68,7 @@ with
             , medida.data_abertura
             , cod_agencia
             , tipo_agencia
+            , uf_agencia
             , medida.data_ultimo_lancamento
             , medida.ultima_data_transacao
             , medida.status_conta
