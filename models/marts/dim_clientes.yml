@@ -11,6 +11,7 @@ models:
       - name: data_abertura
       - name: cod_agencia
       - name: tipo_agencia
+      - name: uf_agencia
       - name: data_ultimo_lancamento
       - name: ultima_data_transacao
       - name: status_conta
