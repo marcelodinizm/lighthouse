@@ -45,6 +45,7 @@ with
             end as status_conta
             , clientes.data_nascimento
             , DATE_DIFF(CURRENT_DATE(), clientes.data_nascimento, YEAR) as idade_cliente
+            , agencias.cod_agencia
             , agencias.tipo_agencia
         from contas
             left join transacao
@@ -64,6 +65,7 @@ with
             , medida.saldo_disponivel
             , medida.perfil_de_atividade
             , medida.data_abertura
+            , cod_agencia
             , tipo_agencia
             , medida.data_ultimo_lancamento
             , medida.ultima_data_transacao
