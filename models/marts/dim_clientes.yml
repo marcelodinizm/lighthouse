@@ -9,6 +9,7 @@ models:
       - name: saldo_total
       - name: saldo_disponivel
       - name: data_abertura
+      - name: cod_agencia
       - name: tipo_agencia
       - name: data_ultimo_lancamento
       - name: ultima_data_transacao
