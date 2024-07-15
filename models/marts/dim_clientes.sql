@@ -75,7 +75,7 @@ with
             , medida.data_nascimento
             , medida.idade_cliente
             , case
-            when idade_cliente <20 then 'até 20 anos'
+            when idade_cliente <20 then '18 - 20 anos'
             when idade_cliente >=20 and idade_cliente <30 then '20-29'
             when idade_cliente >=30 and idade_cliente <40 then '30-39'
             when idade_cliente >=40 and idade_cliente <50 then '40-49'
